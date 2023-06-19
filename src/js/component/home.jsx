@@ -32,6 +32,7 @@ const Home = () => {
 						return <li className="list-group-item" key={index}>{item}</li>
 					})
 					}
+					<li className="list-group-item">{todoArray.length} items left</li>
 				</ul>
 			</div>
 		</div>
