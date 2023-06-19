@@ -27,12 +27,12 @@ const Home = () => {
 			<h1 className="text-center">todos</h1>
 			<div className="d-flex justify-content-center">
 				<ul className="list-group w-50">
-					<input type="text" onChange={e => setInputValue(e.target.value)} value={inputValue} onKeyDown={handleKeyDown} placeholder="What needs to be done?"/>
+					<input className="list-font" type="text" onChange={e => setInputValue(e.target.value)} value={inputValue} onKeyDown={handleKeyDown} placeholder="What needs to be done?"/>
 					{todoArray.map( (item, index) => {
-						return <li className="list-group-item" key={index}>{item}</li>
+						return <li className="list-group-item list-font" key={index}>{item}</li>
 					})
 					}
-					<li className="list-group-item">{todoArray.length} items left</li>
+					<li className="list-group-item list-font task-counter">{todoArray.length} items left</li>
 				</ul>
 			</div>
 		</div>

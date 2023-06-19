@@ -10,3 +10,25 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+h1{
+   font-size: 50px;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+   font-weight: lighter;
+   color: rgba(156, 54, 54, 0.434);
+}
+
+::placeholder{
+    color:darkgray;
+}
+
+.list-font{
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.656) !important;
+}
+
+.task-counter{
+    font-size: 11px;
+    padding-left: 6px;
+    color:darkgray;
+}
