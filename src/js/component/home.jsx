@@ -17,6 +17,7 @@ const Home = () => {
 			setTodoArray(previousState => {
 				return previousState.concat(inputValue);
 			})
+			setInputValue("");
 		};
 	
 	};
