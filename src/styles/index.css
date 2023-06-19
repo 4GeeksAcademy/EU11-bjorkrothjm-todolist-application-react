@@ -17,14 +17,23 @@ h1{
    font-weight: lighter;
    color: rgba(156, 54, 54, 0.434);
 }
+input{
+    border-color: rgba(0, 0, 0, 0.125);
+    border-width: 1px 1px 0px 1px;
+}
+
+input:focus-visible{
+    outline: none;
+}
 
 ::placeholder{
     color:darkgray;
 }
 
-.list-font{
+.list-style{
     font-family:Arial, Helvetica, sans-serif;
     color: rgba(0, 0, 0, 0.656) !important;
+    border-radius: 0px !important;
 }
 
 .task-counter{
