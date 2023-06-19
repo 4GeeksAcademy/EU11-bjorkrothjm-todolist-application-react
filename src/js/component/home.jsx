@@ -18,8 +18,7 @@ const Home = () => {
 				return previousState.concat(inputValue);
 			})
 			setInputValue("");
-		};
-	
+		};	
 	};
 
 	return (
@@ -29,7 +28,7 @@ const Home = () => {
 				<ul className="list-group w-50">
 					<input className="list-style" type="text" onChange={e => setInputValue(e.target.value)} value={inputValue} onKeyDown={handleKeyDown} placeholder="What needs to be done?"/>
 					{todoArray.map( (item, index) => {
-						return <li className="list-group-item list-style" key={index}>{item}</li>
+						return <li className="list-group-item list-style" key={index}>{item}<button>x</button></li>
 					})
 					}
 					<li className="list-group-item list-style task-counter">{todoArray.length} items left</li>
