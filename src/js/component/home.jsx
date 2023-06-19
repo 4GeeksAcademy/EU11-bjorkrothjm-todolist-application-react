@@ -28,11 +28,10 @@ const Home = () => {
 			<div className="d-flex justify-content-center">
 				<ul className="list-group w-50">
 					<input type="text" onChange={e => setInputValue(e.target.value)} value={inputValue} onKeyDown={handleKeyDown} placeholder="What needs to be done?"/>
-					<li className="list-group-item">{todoArray[0]}</li>
-					<li className="list-group-item">{todoArray[1]}</li>
-					<li className="list-group-item">{todoArray[2]}</li>
-					<li className="list-group-item">{todoArray[3]}</li>
-					<li className="list-group-item">{todoArray[4]}</li>
+					{todoArray.map( (item, index) => {
+						return <li className="list-group-item" key={index}>{item}</li>
+					})
+					}
 				</ul>
 			</div>
 		</div>
