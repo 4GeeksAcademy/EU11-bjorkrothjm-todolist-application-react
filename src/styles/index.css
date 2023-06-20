@@ -13,7 +13,7 @@
 
 h1{
    font-size: 50px;
-   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
    font-weight: lighter;
    color: rgba(156, 54, 54, 0.434);
 }
@@ -41,4 +41,16 @@ input:focus-visible{
     font-size: 11px;
     padding-left: 6px;
     color:darkgray;
+}
+
+li button{
+    border: 0;
+    padding: 0;
+    background: none;
+    color:  rgba(156, 54, 54, 0.434);
+    float: right;
+}
+
+li button:hover{
+    color: rgba(156, 54, 54, 0.609);
 }
