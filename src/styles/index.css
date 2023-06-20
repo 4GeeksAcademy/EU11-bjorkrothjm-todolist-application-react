@@ -47,8 +47,17 @@ li button{
     border: 0;
     padding: 0;
     background: none;
+    float: right;
+    visibility: hidden;
+}
+
+li:hover button{
+    border: 0;
+    padding: 0;
+    background: none;
     color:  rgba(156, 54, 54, 0.434);
     float: right;
+    visibility: visible;
 }
 
 li button:hover{
